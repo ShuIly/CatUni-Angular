@@ -1,0 +1,37 @@
+<nav>
+  <div id="nav-wrapper">
+    <div id="logo-wrapper">
+      <a href="home-page.html" id="logo-link">
+        <img src="../../../assets/images/cat-logo.png" alt="cat-logo.png" id="nav-logo">
+      </a>
+    </div>
+    <div id="nav-icon-wrapper" (click)="toggleMenu()">
+      <i class="icon fa fa-bars fa-3x" id="nav-icon"></i>
+    </div>
+    <ul class="nav-list">
+      <li class="nav-item" id="home-item">
+        <a class="nav-item-link" id="home-link" (click)="toggleSubMenu()">
+          <i class="fa fa-angle-down home-icon" aria-hidden="true"></i>
+          Home
+        </a>
+        <ul class="nav-sublist">
+          <li class="nav-subitem">
+            <a href="https://softuni.bg/faq" class="nav-subitem-link">Frequently Asked Questions</a>
+          </li>
+          <li class="nav-subitem">
+            <a href="https://softuni.bg/forum" class="nav-subitem-link">Forum</a>
+          </li>
+          <li class="nav-subitem">
+            <a href="https://softuni.bg/trainings/courses" class="nav-subitem-link">Path of the Cat</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a href="cat-quiz.html" class="nav-item-link">Cat Quiz</a>
+      </li>
+      <li class="nav-item">
+        <a href="about-us.html" class="nav-item-link">About Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>

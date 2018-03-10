@@ -1,0 +1,140 @@
+/* For medium screens and tablets */
+@media screen and (min-width: 1025px){
+
+    /* Fixes bug where rotating screen keeps nav 100vh */
+    .nav-stretch {
+        height: 100px;
+        box-shadow: 0 0 44px rgba(0, 0, 0, .24);
+    }
+
+    /* Sublist becomes visible on hover. Else it toggles on click */
+    #home-item:hover .nav-sublist {
+        margin-top: 40px;
+        transition-delay: 0s;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Home icon rotate when hovered (not for mobile) */
+    .nav-item:hover .home-icon {
+        padding-left: 7px;
+        padding-right: 0;
+        transition-delay: 0s;
+        transform: rotate(180deg);
+    }
+}
+
+/* For medium screens and tablets */
+@media screen and (max-width: 1024px) {
+
+    nav {
+        padding: 0;
+    }
+
+    .nav-list {
+        width: 100%;
+        height: 0;
+        font-size: 2em;
+        visibility: hidden;
+    }
+
+    .nav-item {
+        width: 100%;
+        display: block;
+    }
+
+    .nav-stretch {
+        box-shadow: none;
+    }
+
+    .switch-mobile {
+        padding-top: 20px;
+        height: auto;
+        display: block;
+        visibility: visible;
+    }
+
+    .mobile-link-hovered {
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+    }
+
+    .mobile-icon-rotate {
+        padding-left: 7px;
+        padding-right: 0;
+        transition-delay: 0s;
+        transform: rotate(180deg);
+    }
+
+    .nav-sublist.show-sublist {
+        max-height: 190px;
+        opacity: 1;
+        transition-delay: 0s;
+        visibility: visible;
+        background:
+            linear-gradient(rgba(200, 200, 200, 0.2), rgba(200, 200, 200, 0.2));
+    }
+
+    .nav-sublist {
+        max-height: 0;
+        margin: 0 auto;
+        padding: 0;
+        transition: all 0.5s ease;
+        background: inherit;
+        box-shadow: none;
+        position: relative;
+    }
+
+    .nav-item > .nav-item-link::after {
+        right: auto;
+        left: 16px;
+    }
+
+    .nav-item-link:hover::after {
+        width: 20%;
+    }
+
+    #nav-icon-wrapper {
+        margin-right: 30px;
+        margin-top: 25px;
+    }
+
+    #nav-icon-wrapper {
+        display: block;
+    }
+
+    /* Border under list item doesn't show in mobile */
+    .nav-item > .nav-item-link::after {
+        display: none;
+    }
+
+    .nav-list {
+        margin: 0;
+    }
+
+    .nav-item-link {
+        transition: none;
+    }
+
+    .home-icon {
+        transition: all 0.3s, color 0.3s;
+    }
+}
+
+/* For small screens, tablets and smartphones */
+@media screen and (max-width: 736px) {
+
+    #logo-wrapper {
+        width: 200px;
+    }
+
+    #nav-icon-wrapper {
+        width: 25px;
+        height: 25px;
+        margin-top: 17px;
+    }
+
+    .footer-list {
+        display: none;
+    }
+}

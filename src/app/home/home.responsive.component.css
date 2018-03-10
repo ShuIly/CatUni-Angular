@@ -1,0 +1,148 @@
+
+/* For large screens and tablets */
+@media screen and (max-width: 1259px) {
+
+    /* SERVICES SECTION */
+
+    .services-section {
+        text-align: center;
+    }
+
+    /* Adding another layer of specificy so it can override */
+    .services-section .services-article {
+        width: 40%;
+        height: 400px;
+        margin: 20px;
+        text-align: left;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .services-article:nth-child(3) {
+        background:
+                linear-gradient(rgba(230, 230, 230, 0.1), rgba(230, 230, 230, 0.7)),
+                url("../../assets/images/home-page/cat-gray-high-mobile.png") no-repeat center;
+    }
+
+    .services-article:nth-child(4) {
+        background:
+                linear-gradient(rgba(230, 230, 230, 0.1), rgba(230, 230, 230, 0.7)),
+                url("../../assets/images/home-page/cat-fat-square-mobile.png") no-repeat center;
+        background-size: cover;
+    }
+
+}
+
+/* For medium screens and tablets */
+@media screen and (max-width: 1024px) {
+
+    /* SERVICES SECTION */
+
+    .services-article:nth-child(4) {
+        background-size: contain;
+    }
+
+    /* No need for transition for links on mobile */
+    .apply-link {
+        transition: none;
+    }
+}
+
+/* For medium screens and tablets */
+@media screen and (max-width: 1023px) {
+
+    /* MISSION SECTION */
+
+    .mission-container {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* SERVICES SECTION */
+
+    .services-section .services-article {
+        width: 80%;
+        height: 300px;
+        margin: 60px auto;
+        display: block;
+    }
+
+    /* APPLY SECTION */
+
+    .apply-info-container {
+        width: 80%;
+        margin: 0 auto 60px;
+        position: relative;
+    }
+
+    .apply-info-container::after {
+        content: '';
+        left: 69%;
+        top: 96%;
+        transform: rotate(90deg);
+    }
+}
+
+/* For small screens, tablets and smartphones */
+@media screen and (max-width: 736px) {
+
+    /* BODY */
+
+    body {
+        font-size: 11px;
+    }
+
+    /* HEADER */
+    
+    .header-title-container {
+        background: rgba(255, 255, 255, 0.6);
+    }
+
+    /* MISSION SECTION */
+
+    .mission-container {
+        max-width: 90%;
+    }
+
+    /* SERVICES SECTION */
+
+    .services-section-title {
+        width: 80%;
+        margin: 100px auto;
+        text-align: center;
+    }
+
+    .services-section .services-article {
+        width: 80%;
+        height: 300px;
+        margin-top: 60px;
+        display: block;
+    }
+
+    /* TESTIMONIALS SECTION */
+
+    .testimonials-container {
+        background:
+                linear-gradient(rgba(229, 224, 221, 0.1), rgba(229, 224, 221, 0.3)),
+                url("../../assets/images/home-page/orange-cat-testimony-mobile.png") no-repeat center;
+        background-size: cover;
+        min-height: 600px;
+    }
+
+    .quote-container {
+        max-width: 220px;
+        margin: 0 20px 20px;
+        top: auto;
+        bottom: 5%;
+        left: 0;
+        right: 0;
+    }
+
+    .testimonials-quote {
+        box-sizing: border-box;
+    }
+}
