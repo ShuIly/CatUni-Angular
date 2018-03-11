@@ -31,8 +31,10 @@
   .nav-list {
     width: 100%;
     height: 0;
+    margin: 0;
     font-size: 1.5em;
     visibility: hidden;
+    opacity: 0;
   }
   .nav-item {
     width: 100%;
@@ -44,8 +46,9 @@
   .switch-mobile {
     padding-top: 20px;
     height: auto;
-    display: block;
     visibility: visible;
+    opacity: 1;
+    transition: all .6s ease;
   }
   .mobile-link-hovered {
     background: rgba(0, 0, 0, 0.7);
@@ -90,9 +93,6 @@
   /* Border under list item shouldn't display in mobile */
   .nav-item>.nav-item-link::after {
     display: none;
-  }
-  .nav-list {
-    margin: 0;
   }
   .nav-item-link {
     transition: none;
