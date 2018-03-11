@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-quiz',
@@ -6,12 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./quiz.component.css', './quiz.responsive.component.css'],
 })
 export class QuizComponent {
+  @ViewChild('formResult') 
+  private formResult: ElementRef;
 
   showFormResult(): void {
-    document.querySelector('div.form-result').classList.add('show-result');
+    this.formResult.nativeElement.classList.add('show-result');
   }
 
   hideFormResult(): void {
-    document.querySelector('div.form-result').classList.remove('show-result');
+    this.formResult.nativeElement.classList.remove('show-result');
   }
 }

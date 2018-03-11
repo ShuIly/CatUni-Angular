@@ -1,4 +1,4 @@
-<nav>
+<nav #navigation>
   <div id="nav-wrapper">
     <div id="logo-wrapper">
       <a routerLink="/home" id="logo-link" (click)="closeMenu()">
@@ -8,13 +8,13 @@
     <div id="nav-icon-wrapper" (click)="toggleMenu()">
       <i class="icon fa fa-bars fa-3x" id="nav-icon"></i>
     </div>
-    <ul class="nav-list">
+    <ul class="nav-list" #navList>
       <li class="nav-item" id="home-item">
-        <a class="nav-item-link" id="home-link" (click)="toggleSubMenu()">
-          <i class="fa fa-angle-down home-icon" aria-hidden="true"></i>
+        <a class="nav-item-link" id="home-link" #homeLink (click)="toggleSubMenu()">
+          <i class="fa fa-angle-down home-icon" #homeIcon aria-hidden="true"></i>
           Home
         </a>
-        <ul class="nav-sublist">
+        <ul class="nav-sublist" #navSublist>
           <li class="nav-subitem">
             <a href="https://softuni.bg/faq" class="nav-subitem-link">Frequently Asked Questions</a>
           </li>
