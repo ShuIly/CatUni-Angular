@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes, Router } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { QuizComponent } from './quiz/quiz.component';
+import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { QuizComponent } from './components/quiz/quiz.component';
+import { CommonModule } from '@angular/common';
+import { QuizModule } from './components/quiz/quiz.module';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -15,11 +17,9 @@ const routes: Routes = [
   declarations: [
     HomeComponent,
     AboutComponent,
-    QuizComponent
   ],
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes), QuizModule],
   exports: [RouterModule]
 })
 
 export class AppRoutesModule { }
-

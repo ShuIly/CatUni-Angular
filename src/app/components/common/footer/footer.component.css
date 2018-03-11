@@ -48,43 +48,43 @@ footer {
 }
 
 #facebook-icon {
-  background: url("../../../assets/images/footer-sprites.jpg") 0 50px;
+  background: url("../../../../assets/images/footer-sprites.jpg") 0 50px;
 }
 
 #facebook-icon:hover {
-  background: url("../../../assets/images/footer-sprites.jpg") 0 0;
+  background: url("../../../../assets/images/footer-sprites.jpg") 0 0;
 }
 
 #twitter-icon {
-  background: url("../../../assets/images/footer-sprites.jpg") 300px 50px;
+  background: url("../../../../assets/images/footer-sprites.jpg") 300px 50px;
 }
 
 #twitter-icon:hover {
-  background: url("../../../assets/images/footer-sprites.jpg") 300px 0;
+  background: url("../../../../assets/images/footer-sprites.jpg") 300px 0;
 }
 
 #linkedin-icon {
-  background: url("../../../assets/images/footer-sprites.jpg") 150px 50px;
+  background: url("../../../../assets/images/footer-sprites.jpg") 150px 50px;
 }
 
 #linkedin-icon:hover {
-  background: url("../../../assets/images/footer-sprites.jpg") 150px 0;
+  background: url("../../../../assets/images/footer-sprites.jpg") 150px 0;
 }
 
 #tumblr-icon {
-  background: url("../../../assets/images/footer-sprites.jpg") 100px 50px;
+  background: url("../../../../assets/images/footer-sprites.jpg") 100px 50px;
 }
 
 #tumblr-icon:hover {
-  background: url("../../../assets/images/footer-sprites.jpg") 100px 0;
+  background: url("../../../../assets/images/footer-sprites.jpg") 100px 0;
 }
 
 #google-icon {
-  background: url("../../../assets/images/footer-sprites.jpg") 50px 50px;
+  background: url("../../../../assets/images/footer-sprites.jpg") 50px 50px;
 }
 
 #google-icon:hover {
-  background: url("../../../assets/images/footer-sprites.jpg") 50px 0;
+  background: url("../../../../assets/images/footer-sprites.jpg") 50px 0;
 }
 
 @media screen and (max-width: 736px) {

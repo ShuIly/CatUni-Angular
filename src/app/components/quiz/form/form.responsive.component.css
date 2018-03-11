@@ -1,14 +1,7 @@
 /* For small screens, tablets and smartphones */
 
 @media screen and (max-width: 736px) {
-  /* BODY */
-  body {
-    font-size: 11px;
-  }
-  /* HEADER */
-  .title-container {
-    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
-  }
+
   /* FORM RESULT */
   .form-result {
     width: auto;
@@ -20,7 +13,7 @@
     bottom: 5%;
   }
   .result-background-container {
-    background: url("../../assets/images/cat-quiz/british-shorthair-mobile.jpg") no-repeat center;
+    background: url("../../../../assets/images/cat-quiz/british-shorthair-mobile.jpg") no-repeat center;
     background-size: cover;
   }
   .result-info {

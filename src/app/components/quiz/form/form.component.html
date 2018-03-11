@@ -1,0 +1,32 @@
+<form id="cat-type-form">
+  <div class="form-question-container" *ngFor="let question of questions; let i = index">
+    <div class="form-answer-container">
+      <h2 class="question-title">{{question.title}}</h2>
+      <div *ngFor="let answer of question.answers; let j = index">
+        <input class="form-question-radio" id="{{ 'answer-' + i + '-' + j }}" name="{{ question.name }}" type="radio" value="{{ j }}">
+        <label class="form-question-button" for="{{ 'answer-' + i + '-' + j }}">{{ answer }}</label>
+      </div>
+    </div>
+  </div>
+  <div class="result-btn-container" (click)="showFormResult()">
+    <button class="result-btn" type="button">Result!</button>
+  </div>
+
+  <div class="form-result" #formResult>
+    <div class="result-background-container">
+      <div class="result-title-container">
+        <span class="result-anticipation">Your inner Cat is...</span>
+        <h1 class="result-title">British Shorthair!</h1>
+      </div>
+      <div class="result-bottom">
+        <p class="result-info">
+          You are a noble. The house is your castle, the garden your kingdom. Servants (humans) care for you on every step and your
+          meow is the law. Like all cats, you like to chase yarn and lasers.
+        </p>
+        <div class="accept-btn-container" (click)="hideFormResult()">
+          <button type="button" class="accept-btn">Got it!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
