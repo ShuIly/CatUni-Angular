@@ -34,7 +34,7 @@
     .nav-list {
         width: 100%;
         height: 0;
-        font-size: 2em;
+        font-size: 1.5em;
         visibility: hidden;
     }
 
@@ -67,7 +67,7 @@
     }
 
     .nav-sublist.show-sublist {
-        max-height: 190px;
+        max-height: 200px;
         opacity: 1;
         transition-delay: 0s;
         visibility: visible;
@@ -103,7 +103,7 @@
         display: block;
     }
 
-    /* Border under list item doesn't show in mobile */
+    /* Border under list item shouldn't display in mobile */
     .nav-item > .nav-item-link::after {
         display: none;
     }

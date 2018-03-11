@@ -3,20 +3,21 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './common/menu/menu.component';
 import { FooterComponent } from './common/footer/footer.component';
+import { AppRoutesModule } from './routes.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     MenuComponent,
-    FooterComponent
+    FooterComponent,
+    AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

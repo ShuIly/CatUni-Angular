@@ -1,0 +1,27 @@
+@media screen and (max-width: 736px) {
+
+    /* NAVIGATION */
+
+    nav {
+        font-size: 11px;
+    }
+
+    /* PARTICIPANTS SECTION */
+
+    .participant-article {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .participant-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .participant-article:hover {
+        padding-bottom: 20px;
+    }
+}

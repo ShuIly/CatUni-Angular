@@ -12,3 +12,14 @@ body {
     font-size: 14px;
     font-family: 'Abel', sans-serif;
 }
+
+::selection {
+    background: #000000;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+/* Blurriness gets removed from images */
+img {
+    transform: translateZ(0);
+}

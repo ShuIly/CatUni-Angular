@@ -1,16 +1,5 @@
 /* For now animation-type css is mixed in here. I'm too lazy to move it to a different file right now */
 
-::selection {
-    background: #000000;
-    color: #ffffff;
-    text-shadow: none;
-}
-
-/* Blurriness gets removed from assets/images */
-img {
-    transform: translateZ(0);
-}
-
 /* HEADER */
 
 header {
