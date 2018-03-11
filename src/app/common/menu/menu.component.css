@@ -1,148 +1,154 @@
 /* NAV styling */
 
 nav {
-    width: 100%;
-    background: rgba(239, 239, 239, 0.96);
-    box-shadow: 0 0 44px rgba(0, 0, 0, .24);
-    z-index: 999;
-    position: fixed;
+  width: 100%;
+  background: rgba(239, 239, 239, 0.96);
+  box-shadow: 0 0 44px rgba(0, 0, 0, .24);
+  z-index: 999;
+  position: fixed;
 }
 
 /* Blurriness gets removed from images */
+
 img {
-    transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 #nav-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
 }
 
 #logo-wrapper {
-    width: 260px;
-    display: inline-block;
+  width: 260px;
+  display: inline-block;
 }
 
 #nav-logo {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 /* UNORDERED LIST */
+
 /* Here flex is used so there aren't any invisible borders between list items */
+
 .nav-list {
-    margin-top: 20px;
-    margin-right: 20px;
-    font-size: 1.5em;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .nav-item {
-    list-style-type: none;
-    display: inline-block;
+  list-style-type: none;
+  display: inline-block;
 }
 
 #home-item {
-    cursor: pointer;
-    outline: none;
-    overflow: hidden;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
 }
 
 .nav-item-link {
-    padding: 20px;
-    color: #000;
-    transition: all .3s;
-    text-decoration: none;
-    display: block;
-    position: relative;
+  padding: 20px;
+  color: #000;
+  transition: all .3s;
+  text-decoration: none;
+  display: block;
+  position: relative;
 }
 
 .nav-item-link:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 /* Menu border animation */
+
 .nav-item-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 0;
-    margin: 0 auto;
-    height: 2px;
-    background: #000000;
-    transition: all .3s;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  margin: 0 auto;
+  height: 2px;
+  background: #000000;
+  transition: all .3s;
 }
 
 .home-icon {
-    padding-right: 7px;
-    transition: 0.3s 0.5s;
+  padding-right: 7px;
+  transition: 0.3s 0.5s;
 }
 
 /* HOME SUBLIST */
+
 /* Added invisible border below Home so hover can get transfered to sublist */
+
 .home-item:hover::after {
-    content: " ";
-    position: absolute;
-    width: 30%;
-    height: 60px;
-    background: transparent;
+  content: " ";
+  position: absolute;
+  width: 30%;
+  height: 60px;
+  background: transparent;
 }
 
 .nav-sublist {
-    padding: 40px 0;
-    margin-top: 60px;
-    background-color: rgba(239, 239, 239, 0.9);
-    box-shadow: 0 0 84px rgba(0, 0, 0, .24);
-    transition: 0.5s 0.5s;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
+  padding: 40px 0;
+  margin-top: 60px;
+  background-color: rgba(239, 239, 239, 0.9);
+  box-shadow: 0 0 84px rgba(0, 0, 0, .24);
+  transition: 0.5s 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
 }
 
 .nav-subitem {
-    padding: 0 40px;
-    transition: all .3s ease, background .0s;
-    list-style-type: none;
+  padding: 0 40px;
+  transition: all .3s ease, background .0s;
+  list-style-type: none;
 }
 
 .nav-subitem-link {
-    padding: 10px;
-    color: #000;
-    text-decoration: none;
-    display: block;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+  display: block;
 }
 
 /* Menu for mobile */
 
 #nav-icon-wrapper {
-    width: 35px;
-    height: 35px;
-    padding: 10px;
-    cursor: pointer;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  cursor: pointer;
 }
 
 #nav-icon {
-    font-size: 2.5em;
+  font-size: 2.5em;
 }
 
 #nav-icon-wrapper {
-    display: none;
+  display: none;
 }
 
 #nav-icon::before {
-    content: "\f0c9";
+  content: "\f0c9";
 }
 
 .nav-subitem:hover {
-    background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .nav-subitem:hover .nav-subitem-link {
-    color: #ffffff;
+  color: #ffffff;
 }
