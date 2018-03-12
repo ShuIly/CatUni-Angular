@@ -1,14 +1,19 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
+import { Question } from '../../../questions/question';
+import { QuestionService } from '../../../questions/questions.service';
 
 @Component({
   selector: 'app-form',
+  providers: [QuestionService],
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css', './form.responsive.component.css']
 })
-export class FormComponent {
-  public questions: Array<object>;
+export class FormComponent implements OnInit {
+  questions: Question[];
 
-  @ViewChild('formResult') 
+  constructor(private questionsService: QuestionService) { }
+
+  @ViewChild('formResult')
   private formResult: ElementRef;
 
   showFormResult(): void {
@@ -19,23 +24,7 @@ export class FormComponent {
     this.formResult.nativeElement.classList.remove('show-result');
   }
 
-  constructor() {
-    this.questions = [
-      {
-        "name": "cat-love",
-        "title": "Do you like cats?",
-        "answers": ["Yes!", "No!", "Maybe?"]
-      },
-      {
-        "name": "personality",
-        "title": "What's your personality like?",
-        "answers": ["Shy", "Energetic!", "Why am I doing this?"]
-      },
-      {
-        "name": "dog-love",
-        "title": "Do you like dogs?",
-        "answers": ["No!", "No!", "Wait, there's only No's?"]
-      }
-    ]
+  ngOnInit(): void {
+    this.questions = this.questionsService.getAllQuestions();
   }
 }

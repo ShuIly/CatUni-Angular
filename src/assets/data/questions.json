@@ -1,19 +1,29 @@
-{
-  "questions": [
-    {
-      "title": "Do you like cats?",
-      "name": "cat-love",
-      "answers": [ "Yes!", "No!", "Maybe?" ]
-    },
-    {
-      "title": "What's your personality like?",
-      "name": "personality",
-      "answers": [ "Shy", "Energetic!", "Why am I doing this?" ]
-    },
-    {
-      "title": "Do you like dogs?",
-      "name": "dog-love",
-      "answers": [ "No!", "No!", "Wait, there's only No's?" ]
-    }
-  ]
-}
+[
+  {
+    "title": "Do you like cats?",
+    "name": "cat-love",
+    "answers": [
+      "Yes!",
+      "No!",
+      "Maybe?"
+    ]
+  },
+  {
+    "title": "What's your personality like?",
+    "name": "personality",
+    "answers": [
+      "Shy",
+      "Energetic!",
+      "Why am I doing this?"
+    ]
+  },
+  {
+    "title": "Do you like dogs?",
+    "name": "dog-love",
+    "answers": [
+      "No!",
+      "No!",
+      "Wait, there's only No's?"
+    ]
+  }
+]
