@@ -86,14 +86,3 @@ footer {
 #google-icon:hover {
   background: url("../../../../assets/images/footer-sprites.jpg") 50px 0;
 }
-
-@media screen and (max-width: 736px) {
-  /* FOOTER */
-  .footer-list {
-    display: none;
-  }
-  #copyright {
-    font-size: 1.5em;
-    line-height: 40px;
-  }
-}

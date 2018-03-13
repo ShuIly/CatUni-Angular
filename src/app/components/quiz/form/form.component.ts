@@ -6,7 +6,7 @@ import { QuestionService } from '../../../questions/questions.service';
   selector: 'app-form',
   providers: [QuestionService],
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.css', './form.responsive.component.css']
+  styleUrls: ['./form.component.css', './form-responsive.component.css']
 })
 export class FormComponent implements OnInit {
   questions: Question[];

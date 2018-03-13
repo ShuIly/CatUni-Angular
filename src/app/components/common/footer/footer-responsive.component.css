@@ -1,0 +1,10 @@
+@media screen and (max-width: 736px) {
+  /* FOOTER */
+  .footer-list {
+    display: none;
+  }
+  #copyright {
+    font-size: 1.5em;
+    line-height: 40px;
+  }
+}

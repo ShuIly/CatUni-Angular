@@ -3,7 +3,7 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css', './menu.responsive.component.css'],
+  styleUrls: ['./menu.component.css', './menu-responsive.component.css'],
 })
 export class MenuComponent {
   @ViewChild('navigation')
