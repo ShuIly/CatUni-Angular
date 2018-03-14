@@ -16,6 +16,7 @@ footer {
   line-height: 70px;
   text-transform: uppercase;
   margin-left: 20px;
+  font-size: 1.7em;
 }
 
 #copyright::before {
