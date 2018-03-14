@@ -18,9 +18,9 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     HomeComponent,
-    AboutComponent,
+    AboutComponent
   ],
-  imports: [RouterModule.forRoot(routes), QuizModule],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 
