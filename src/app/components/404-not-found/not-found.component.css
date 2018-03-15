@@ -1,20 +1,20 @@
 
 /* APPLY SECTION */
 
-.apply-section {
+.not-found-section {
   padding-top: 15em;
   background: linear-gradient(rgba(229, 224, 221, 0.1), rgba(229, 224, 221, 0.5));
   overflow: auto;
 }
 
-.apply-container {
+.not-found-container {
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
   box-sizing: border-box;
 }
 
-.apply-info-container {
+.not-found-info-container {
   padding: 40px;
   border: 2px solid #333;
   border-radius: 20px;
@@ -24,7 +24,7 @@
   top: 30px;
 }
 
-.apply-info-container::after {
+.not-found-info-container::after {
   width: 48px;
   height: 52px;
   background: url("../../../assets/images/home-page/conversation-pointer.png") no-repeat center;
@@ -35,7 +35,7 @@
   content: '';
 }
 
-.apply-title {
+.not-found-title {
   font-size: 3em;
   border-bottom: 2px solid #333;
   display: inline-block;
@@ -48,7 +48,7 @@
   text-align: center;
 }
 
-.apply-link {
+.not-found-link {
   font-size: 1.3em;
   padding: 10px 20px;
   color: #000;
@@ -59,7 +59,7 @@
   text-decoration: none;
 }
 
-.apply-link:hover {
+.not-found-link:hover {
   background: #333;
   color: #fff;
   border: 1px solid #000;
@@ -67,7 +67,7 @@
   cursor: pointer;
 }
 
-.apply-image {
+.not-found-image {
   width: 50%;
   float: right;
 }

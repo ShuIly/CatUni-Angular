@@ -71,6 +71,11 @@
 /* For small screens, tablets and smartphones */
 
 @media screen and (max-width: 736px) {
+
+  main {
+    font-size: 0.8em;
+  }
+
   /* HEADER */
   .header-title-container {
     background: rgba(255, 255, 255, 0.6);

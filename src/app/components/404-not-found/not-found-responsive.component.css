@@ -2,12 +2,12 @@
 
 @media screen and (max-width: 1023px) {
   /* APPLY SECTION */
-  .apply-info-container {
+  .not-found-info-container {
     width: 80%;
     margin: 0 auto 60px;
     position: relative;
   }
-  .apply-info-container::after {
+  .not-found-info-container::after {
     content: '';
     left: 69%;
     top: 96%;
