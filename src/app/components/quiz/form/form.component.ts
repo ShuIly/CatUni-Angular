@@ -1,6 +1,6 @@
 import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
-import { Question } from '../../../questions/question';
-import { QuestionService } from '../../../questions/questions.service';
+import { Question } from '../../../../services/questions/question';
+import { QuestionService } from '../../../../services/questions/questions.service';
 
 @Component({
   selector: 'app-form',

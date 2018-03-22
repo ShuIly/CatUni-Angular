@@ -10,7 +10,7 @@
   .not-found-info-container::after {
     content: '';
     left: 69%;
-    top: 96%;
+    top: 97%;
     transform: rotate(90deg);
   }
 }

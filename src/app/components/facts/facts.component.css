@@ -1,0 +1,44 @@
+#wrapper {
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  padding-top: 12em;
+  text-align: center;
+}
+
+.fact-heading {
+  margin-bottom: 25px;
+}
+
+.btn-container {
+  height: 30px;
+  text-align: center;
+}
+
+.fact-btn {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  color: #000;
+  border: 1px solid #000;
+  background: none;
+  outline: none;
+  transition: all .3s;
+  text-decoration: none;
+}
+
+.fact-btn:hover {
+  background: #333;
+  color: #fff;
+  border: 1px solid #000;
+  box-shadow: 4px 4px 6px -2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+main {
+  margin-top: 5em;
+  text-align: center;
+}
