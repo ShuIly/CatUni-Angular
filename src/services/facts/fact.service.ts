@@ -1,14 +1,18 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { of } from 'rxjs/observable/of';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+
 import { Fact } from './fact';
 
 @Injectable()
 export class FactService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  getFacts(): Observable<Fact> {
-    return 
+  reqFact(): Observable<any> {
+
+    return this.http.get<any>('https://cataas.com/cat', { 
+      headers: new HttpHeaders({ 'Content-Type': 'text/html' })
+    });
   }
 }

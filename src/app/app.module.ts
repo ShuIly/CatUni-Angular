@@ -9,6 +9,7 @@ import { AppRoutingModule, RoutingComponents } from './app-routing.module';
 import { FactsComponent } from './components/facts/facts.component';
 import { FactService } from '../services/facts/fact.service';
 import { HomeComponent } from './components/home/home.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HomeComponent } from './components/home/home.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
   ],
   providers: [FactService],
