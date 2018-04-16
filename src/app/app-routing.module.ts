@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { QuizModule } from './components/quiz/quiz.module';
 
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
@@ -27,5 +26,11 @@ const routes: Routes = [
 
 export class AppRoutingModule { }
 
-export const RoutingComponents =
-  [HomeComponent, AboutComponent, QuizComponent, FactsComponent, NotFoundComponent, FormComponent];
+export const RoutingComponents = [
+  HomeComponent,
+  AboutComponent,
+  QuizComponent,
+  FactsComponent,
+  NotFoundComponent,
+  FormComponent
+];
