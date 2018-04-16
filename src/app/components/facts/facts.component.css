@@ -44,20 +44,20 @@ main {
 }
 
 #fact-content {
-  max-width: 80%;
+  max-width: 90%;
   position: relative;
   margin: 0 auto 100px;
-  text-align: center;
+  display: inline-block;
 }
 
 .fact-image {
+  max-width: 100%;
   display: block;
   margin: 0 auto;
 }
 
 #fact-container {
-  width: 70%;
-  margin: 0 auto;
+  margin: 0 20px;
   padding: 20px;
   background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8));
   position: absolute;
