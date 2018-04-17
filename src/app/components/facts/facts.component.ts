@@ -8,7 +8,7 @@ import { Fact } from '../../../services/facts/fact';
   styleUrls: ['./facts.component.css']
 })
 export class FactsComponent implements OnInit {
-  fact: any;
+  fact: string;
 
   constructor(private factService: FactService) { }
 
@@ -18,6 +18,6 @@ export class FactsComponent implements OnInit {
 
   getFact() {
     this.factService.reqFact()
-      .subscribe(fact => console.log(fact));
+      .subscribe(fact => this.fact = fact.value.joke);
   }
 }

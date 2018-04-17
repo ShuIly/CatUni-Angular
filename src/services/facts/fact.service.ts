@@ -10,6 +10,6 @@ export class FactService {
   constructor(private http: HttpClient) { }
 
   reqFact(): Observable<any> {
-    return this.http.get<any>('https://catfact.ninja/fact')
+    return this.http.get<any>('http://api.icndb.com/jokes/random');
   }
 }
