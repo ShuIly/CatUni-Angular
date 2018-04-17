@@ -8,11 +8,9 @@ import { Fact } from '../../../services/facts/fact';
   styleUrls: ['./facts.component.css']
 })
 export class FactsComponent implements OnInit {
-  fact: Fact;
+  fact: any;
 
-  constructor(private factService: FactService) { 
-    this.fact = new Fact("Loading...", 20);
-  }
+  constructor(private factService: FactService) { }
 
   ngOnInit() {
     this.getFact();
@@ -20,6 +18,6 @@ export class FactsComponent implements OnInit {
 
   getFact() {
     this.factService.reqFact()
-      .subscribe(fact => this.fact = fact);
+      .subscribe(fact => console.log(fact));
   }
 }

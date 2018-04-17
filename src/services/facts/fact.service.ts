@@ -9,8 +9,7 @@ export class FactService {
 
   constructor(private http: HttpClient) { }
 
-  reqFact(): Observable<Fact> {
-
-    return this.http.get<Fact>('https://catfact.ninja/fact');
+  reqFact(): Observable<any> {
+    return this.http.get<any>('https://catfact.ninja/fact')
   }
 }
