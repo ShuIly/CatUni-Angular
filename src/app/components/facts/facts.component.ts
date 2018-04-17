@@ -9,10 +9,9 @@ import { Fact } from '../../../services/facts/fact';
 })
 export class FactsComponent implements OnInit {
   fact: Fact;
-  text: JSON;
 
-  constructor(private factService: FactService) {
-    this.fact = new Fact('Waiting...', 20);
+  constructor(private factService: FactService) { 
+    this.fact = new Fact("Loading...", 20);
   }
 
   ngOnInit() {
@@ -21,6 +20,6 @@ export class FactsComponent implements OnInit {
 
   getFact() {
     this.factService.reqFact()
-      .subscribe(fact => this.text = fact);
+      .subscribe(fact => this.fact = fact);
   }
 }

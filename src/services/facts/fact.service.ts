@@ -9,10 +9,8 @@ export class FactService {
 
   constructor(private http: HttpClient) { }
 
-  reqFact(): Observable<any> {
+  reqFact(): Observable<Fact> {
 
-    return this.http.get<any>('https://cataas.com/cat', { 
-      headers: new HttpHeaders({ 'Content-Type': 'text/html' })
-    });
+    return this.http.get<Fact>('https://catfact.ninja/fact');
   }
 }
