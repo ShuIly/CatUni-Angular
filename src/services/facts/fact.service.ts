@@ -2,8 +2,6 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-import { Fact } from './fact';
-
 @Injectable()
 export class FactService {
 

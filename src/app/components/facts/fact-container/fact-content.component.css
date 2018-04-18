@@ -1,0 +1,26 @@
+#fact-content {
+  max-width: 600px;
+  position: relative;
+  margin: 0 auto 100px;
+  display: inline-block;
+}
+
+.fact-image {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#fact-container {
+  margin: 0 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+}
+
+.fact-text {
+  font-size: 1.5em;
+}

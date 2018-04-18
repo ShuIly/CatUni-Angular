@@ -10,6 +10,7 @@ import { FactsComponent } from './components/facts/facts.component';
 import { FactService } from '../services/facts/fact.service';
 import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SpinnerService } from '../services/spinners/spinner.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,10 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     AppRoutingModule,
   ],
-  providers: [FactService],
+  providers: [
+    FactService,
+    SpinnerService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,23 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import { FactService } from '../../../services/facts/fact.service';
-import { Fact } from '../../../services/facts/fact';
+import { Component, ChangeDetectorRef } from '@angular/core';
 
 @Component({
   selector: 'app-facts',
   templateUrl: './facts.component.html',
   styleUrls: ['./facts.component.css']
 })
-export class FactsComponent implements OnInit {
-  fact: string;
+export class FactsComponent {
+  render: boolean = true;
 
-  constructor(private factService: FactService) { }
+  constructor(private cdRef: ChangeDetectorRef) { }
 
-  ngOnInit() {
-    this.getFact();
-  }
-
-  getFact() {
-    this.factService.reqFact()
-      .subscribe(fact => this.fact = fact.value.joke);
+  reRender(): void {
+    this.render = false;
+    this.cdRef.detectChanges();
+    this.render = true;
   }
 }

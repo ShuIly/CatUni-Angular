@@ -1,0 +1,8 @@
+<app-spinner [name]="factSpinnerName" [show]="!loaded"></app-spinner>
+<div id="fact-content">
+  <img [src]="factImageUrl" alt="cat-image.jpg" class="fact-image" [hidden]="!loaded" (load)="loaded = true">
+  <div id="fact-container" [hidden]="!loaded">
+    <h2 class="fact-heading">Fact:</h2>
+    <p class="fact-text">{{ fact }}</p>
+  </div>
+</div>

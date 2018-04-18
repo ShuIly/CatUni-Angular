@@ -1,8 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, OnInit } from '@angular/core';
+import { SpinnerService } from '../../../services/spinners/spinner.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css', './home-responsive.component.css'],
 })
-export class HomeComponent {}
+export class HomeComponent {
+
+}

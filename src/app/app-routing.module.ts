@@ -7,6 +7,8 @@ import { QuizComponent } from './components/quiz/quiz.component';
 import { NotFoundComponent } from './components/404-not-found/not-found.component';
 import { FactsComponent } from './components/facts/facts.component';
 import { FormComponent } from './components/quiz/form/form.component';
+import { SpinnerComponent } from './components/common/spinner/spinner.component';
+import { FactContentComponent } from './components/facts/fact-container/fact-content.component';
 
 
 const routes: Routes = [
@@ -32,5 +34,7 @@ export const RoutingComponents = [
   QuizComponent,
   FactsComponent,
   NotFoundComponent,
-  FormComponent
+  FormComponent,
+  SpinnerComponent,
+  FactContentComponent
 ];
