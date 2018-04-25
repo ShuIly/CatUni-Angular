@@ -9,6 +9,7 @@ import { FactsComponent } from './components/facts/facts.component';
 import { FormComponent } from './components/quiz/form/form.component';
 import { SpinnerComponent } from './components/common/spinner/spinner.component';
 import { FactContentComponent } from './components/facts/fact-container/fact-content.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'quiz', component: QuizComponent },
   { path: 'facts', component: FactsComponent },
   { path: 'not-found', component: NotFoundComponent },
+  { path: 'login', component: LoginComponent },
   { path: '**', redirectTo: 'not-found', pathMatch: 'full' }
 ]
 
@@ -36,5 +38,6 @@ export const RoutingComponents = [
   NotFoundComponent,
   FormComponent,
   SpinnerComponent,
-  FactContentComponent
+  FactContentComponent,
+  LoginComponent
 ];
