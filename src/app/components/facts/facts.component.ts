@@ -1,4 +1,5 @@
 import { Component, ChangeDetectorRef } from '@angular/core';
+import { FactService } from '../../../services/facts/fact.service';
 
 @Component({
   selector: 'app-facts',

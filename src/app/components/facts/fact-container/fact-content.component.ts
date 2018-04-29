@@ -7,11 +7,12 @@ import { FactService } from '../../../../services/facts/fact.service';
   styleUrls: ['./fact-content.component.css'],
 })
 export class FactContentComponent implements OnInit {
-  baseUrl: string = 'https://cataas.com/cat?height=300';
+  baseUrl: string = 'https://cataas.com/cat?height=450&';
   factImageUrl: string;
   factSpinnerName: string = 'fact-spinner';
   fact: string;
-  loaded: boolean = false;
+  imageLoaded: boolean = false;
+  factLoaded: boolean = false;
 
   constructor(
     private factService: FactService,
@@ -19,15 +20,18 @@ export class FactContentComponent implements OnInit {
 
   ngOnInit() {
     this.getFact();
-    this.reRenderImage();
+    this.changeImageStamp();
   }
 
   getFact() {
     this.factService.reqFact()
-      .subscribe(fact => this.fact = fact.value.joke);
+      .subscribe(res => { 
+        this.fact = res.fact;
+        this.factLoaded = true;
+      });
   }
 
-  reRenderImage() {
+  changeImageStamp() {
     this.factImageUrl = this.baseUrl + (+ new Date());
   }
 }
