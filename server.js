@@ -5,8 +5,10 @@ const path = require('path');
 const cors = require('cors');
 const app = express();
 
+const url = process.env.URL || 'http://localhost:8080';
+
 const corsOptions = {
-  origin: 'http://localhost:8080',
+  origin: url,
   optionsSuccessStatus: 200
 }
 

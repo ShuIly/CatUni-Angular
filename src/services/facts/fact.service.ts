@@ -10,7 +10,7 @@ export class FactService {
   ) { }
 
   reqFact(): Observable<any> {
-    // return this.http.get<any>('http://api.icndb.com/jokes/random');
-    return this.http.get<any>('http://localhost:8080/api/catFact/');
+    // return this.http.get<any>('http://localhost:8080/api/catFact/');
+    return this.http.get<any>('https://catuni.herokuapp.com/api/catFact/');
   }
 }
